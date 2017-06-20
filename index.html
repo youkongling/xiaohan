@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xiaohan</title>
+	<style>
+		.grid-item { width: 200px; height: 200px;border: 1px solid blue;}
+		.grid-item--width2 { width: 400px; height: 300px;border:1px solid red;}
+	</style>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+	<script src="node_modules/lazyloadjs/lazyload.js"></script>
+</head>
+<body>
+	<div class="grid">
+		<div class="grid-item lazy" data-original>1</div>
+		<div class="grid-item grid-item--width2 lazy">2</div>
+		<div class="grid-item lazy">3</div>
+		<div class="grid-item lazy">4</div>
+		<div class="grid-item grid-item--width2 lazy">5</div>
+		<div class="grid-item lazy">6</div>
+		<div class="grid-item lazy">7</div>
+		<div class="grid-item grid-item--width2 lazy">8</div>
+		<div class="grid-item lazy">9</div>
+		<div class="grid-item lazy">10</div>
+		<div class="grid-item lazy">11</div>
+		<div class="grid-item grid-item--width2 lazy">12</div>
+		<div class="grid-item lazy">13</div>
+		<div class="grid-item lazy">14</div>
+		<div class="grid-item grid-item--width2 lazy">15</div>
+		<div class="grid-item lazy">16</div>
+		<div class="grid-item lazy">17</div>
+		<div class="grid-item grid-item--width2 lazy">18</div>
+		<div class="grid-item lazy">19</div>
+		<div class="grid-item lazy">20</div>
+	</div>
+	<script>
+		$('.grid').masonry({
+		  	// options
+		  	itemSelector: '.grid-item',
+		  	columnWidth: 10,
+		});
+		$(".lazy").lazyload({
+			effect:"fadeIn"
+		});
+	</script>
+</body>
+</html>

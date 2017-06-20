@@ -1,0 +1,18 @@
+{
+  "name": "xiaohan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "lazyloadjs": "^3.2.2",
+    "masonry-layout": "^4.2.0",
+    "scroll-js": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
